@@ -17,6 +17,9 @@ public class CategoriaServiceImpl implements ICategoriaService{
 	@Override
 	public Categoria adicionarCategoria(Categoria c) {
 		// TODO Auto-generated method stub
+		System.out.println(c);
+		if (c.getDescricao() == null || c.getDescricao().length() == 0)
+			return null;
 		return repo.save(c);
 	}
 
