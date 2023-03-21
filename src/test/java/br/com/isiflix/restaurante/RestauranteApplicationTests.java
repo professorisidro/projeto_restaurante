@@ -24,11 +24,10 @@ class RestauranteApplicationTests {
 
 	
 	@Test
-	public void deveriaCadastrarUmaCategoria() {
-		System.out.println("--- cadastrando categoria");
+	public void shouldCreateCategoria() {
 		Categoria c = new Categoria();
 		c.setCodigo(1);
-		c.setDescricao("Entradas");
+		c.setDescricao("Sobremesas");
 		Categoria res = service.adicionarCategoria(c);
 		assertTrue(res != null && res.getCodigo() > 0); // quero conferir se as 2 condições são verdadeiras
 	}
