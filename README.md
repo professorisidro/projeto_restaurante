@@ -34,5 +34,3 @@ Uma categoria pode ter vários pratos associados a ela
      constraint fk_categ foreign key (cod_categoria) references tbl_categoria(codigo)
   );  
  ```
- 
- ## Pratica 
